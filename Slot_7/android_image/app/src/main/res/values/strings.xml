@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">android_image</string>
+    <string name="my_image_description">This is my image</string>
+</resources>
