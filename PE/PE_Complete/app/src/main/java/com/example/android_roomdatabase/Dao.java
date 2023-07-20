@@ -12,22 +12,22 @@ import java.util.List;
 public interface Dao {
     // below method is use to add data to database.
     @Insert
-    void insert(Contact model);
+    void insert(Course model);
 
     // below method is use to update the data in our database.
     @Update
-    void update(Contact model);
+    void update(Course model);
 
     // below line is use to delete a specific course in our database.
     @Delete
-    void delete(Contact model);
+    void delete(Course model);
 
     // on below line we are making query to delete all courses from our database.
-    @Query("DELETE FROM contact")
-    void deleteAllContacts();
+    @Query("DELETE FROM course_table")
+    void deleteAllCourses();
 
     // below line is to read all the courses from our database.
     // in this we are ordering our courses in ascending order with our course name.
-    @Query("SELECT * FROM contact ORDER BY empName ASC")
-    List<Contact> getAllContacts();
+    @Query("SELECT * FROM course_table ORDER BY courseName ASC")
+    List<Course> getAllCourses();
 }
